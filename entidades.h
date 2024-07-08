@@ -5,8 +5,14 @@
 #include "dominios.h"
 
 //ENTIDADE CONTA -----------------------------------------------------------------
+/**
+* @brief Classe concreta, que contem as informacoes sobre os dados pessoais da conta.
+*/
 class Conta {
 private:
+    /**
+    * @brief Sao as informacoes da conta, que incluem CPF, Senha, e Nome.
+    */
     CPF cpf;
     Nome nome;
     Senha senha;
@@ -48,8 +54,15 @@ inline Senha Conta::getsenha() const{
 
 
 //ENTIDADE TITULO -------------------------------------------------------------------
+/**
+* @brief Classe concreta Titulo, que contem as informacoes sobre os Titulos da conta.
+*/
 class Titulo {
 private:
+    /**
+    *@brief Sao os dados sobre  movimentacao e emissoes de titulos da conta.
+    Ele incluem Codigo, Emissor, Setor, Emissao, Vencimento e Valor.
+    */
     CodTitulo codigo;
     Nome emissor;
     Setor setor;
@@ -127,8 +140,15 @@ inline Dinheiro Titulo::getvalor() const{
 
 
 //ENTIDADE PAGAMENTO --------------------------------------------------------------
+/**
+* @brief Classe concreta, que contem as informacoes sobre os pagamentos realizados pela conta.
+*/
 class Pagamento {
 private:
+    /**
+    * @brief Trata-se dos dados dos pagamentos realizados.
+    Incluem Codigdo de pagamento, Data, Percentual e Estado.
+    */
     CodPagamento codigo;
     Data data;
     Percentual percentual;
